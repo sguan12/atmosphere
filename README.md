@@ -1,2 +1,2 @@
 # atmosphere
-weather app project with react
+Personal project to try using react.js. Not your typical weather forecast ⛅
