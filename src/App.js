@@ -1,5 +1,13 @@
 import React from 'react';
 
+var key = "a8c4082333a7853f46479418b8da3462";
+
+function data(city) {
+  fetch('api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=' + key)  
+	.then(res => res.json())
+	// .then( ? );
+}
+
 function App() {
   return (
     <div className='App'>
