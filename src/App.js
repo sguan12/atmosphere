@@ -11,14 +11,15 @@ function data(city) {
 function App() {
   return (
     <div className='App'>
+      <div class="title">
+        atmosphere
+      </div>
       <div class="data">
-        <div>Sunday</div>
-        <div>Monday</div>
-        <div>Tuesday</div>
-        <div>Wednesday</div>  
-        <div>Thursday</div>
-        <div>Friday</div>
-        <div>Saturday</div>
+        <div class="card">Monday</div>
+        <div class="card">Tuesday</div>
+        <div class="card">Wednesday</div>  
+        <div class="card">Thursday</div>
+        <div class="card">Friday</>
       </div>
     </div>
   );

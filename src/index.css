@@ -1,14 +1,15 @@
 .data {
     display: flex;
-    flex-wrap: nowrap;
-    background-color: rgb(22, 53, 85);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3em;
 }
 
-.data > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+.card {
+    background-color: coral;
+    padding: 1em;
+    width: 10em;
+    height: 15em;
+    border-radius: 30px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
 }
