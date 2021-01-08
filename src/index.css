@@ -1,30 +1,54 @@
 
 html {
-    background-image: linear-gradient(rgb(171, 199, 239), rgb(200, 226, 239));
+    background-image: linear-gradient(rgb(157, 186, 228), rgb(206, 229, 240));
     height: 100%;
     font-family: 'Montserrat';
+    overflow: hidden;
+    padding: 1em;
 }
 
 .title {
     font-weight: 800;
     font-size: 4em;
-    margin: 1em;
-    margin-bottom: 0.3em;
-    text-align: center;
+    letter-spacing: 6px;
+    margin-left: 1em;
+    margin-bottom: 0.2em;
+    text-align: left;
     color: rgba(255, 255, 255, 0.893);
 }
+
 .data {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1em;
     justify-content: space-between;
-    padding: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    letter-spacing: 2px;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+    margin: 1em;
+    width: 26em;
+    height: 26em;
+    border-radius: 40px;
+    text-align: center;
 }
 
 .card {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
-    width: 11em;
-    height: 20em;
+    margin: 1em;
+    margin-top: 1.4em;
+    margin-bottom: 0.7em;
+    width: 37em;
+    height: 3.7em;
     border-radius: 30px;
     text-align: center;
+}
+
+p {
+    font-size: 1.2em;
 }
