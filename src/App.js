@@ -19,7 +19,7 @@ function App() {
         <div class="card">Tuesday</div>
         <div class="card">Wednesday</div>  
         <div class="card">Thursday</div>
-        <div class="card">Friday</>
+        <div class="card">Friday</div>
       </div>
     </div>
   );
