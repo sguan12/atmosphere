@@ -1,11 +1,11 @@
-sunny: warm, radiant sun. offers us a beaming smile. lights our world with joy.
+clear sky: warm, radiant sun. offers us a beaming smile. lights our world with joy.
 
-partly cloudy: a shy ray of light. cautiously peeks through the clouds. stays partly hidden.
+partly cloudy: a shy ray of light, cautiously peeks through the clouds, stays partly hidden.
 
-cloudy: grey and moody skies.
+cloudy: gray and moody skies. there's no sun to be seen but, good photo lighting. 
 
-thunderstorms: rain, but with a flash. fierce lightning pierce the heavens. booming drums above. (echoing thunder)
+thunderstorms: rain but with a flash. fierce lightning pierce the heavens. booming drums above.
 
-showers:
+showers: heavy raindrops fall. rest your eyes and listen close. nature's lullaby.
 
-snow:
+snow: white, frosty winter. icy crystals float gently. they melt in your hands.
