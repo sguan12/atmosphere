@@ -1,2 +1,2 @@
 # atmosphere
-Personal project to learn react.js. Not your typical weather forecast ⛅
+Personal project to learn react.js, featuring haikus. Not your typical weather forecast ⛅
