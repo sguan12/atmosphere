@@ -1,7 +1,10 @@
 
 html {
-    background-image: linear-gradient(rgb(157, 186, 228), rgb(206, 229, 240));
     height: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgb(157, 186, 228), rgb(206, 229, 240));
     font-family: 'Montserrat';
     font-weight: 200;
     overflow: hidden;
@@ -61,6 +64,22 @@ html {
     padding-left: 3em;
     padding-right: 3em;
     letter-spacing: 2px;
+    animation-name: fadein;
+    position: relative;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        bottom: -4em;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0em;
+    }
 }
 
 .date {
@@ -75,7 +94,7 @@ html {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1em;
     margin: 1em;
-    width: 26em;
+    width: 27em;
     height: 26em;
     border-radius: 40px;
     text-align: center;
@@ -89,6 +108,7 @@ html {
 #ctemp {
     font-size: 6em;
     font-weight: 400;
+    color: rgba(57, 71, 88, 0.9);
     margin: 0;
     margin-left: 0.4em;
     width: 2em;
@@ -103,14 +123,34 @@ html {
     background-color: rgba(75, 95, 118, 0.116);
 }
 
+#haikutitle {
+    font-size: 1.2em;
+}
+
 #haiku {
-    font-size: 1.4em;
+    font-size: 1.1em;
     line-height: 1.5;
-    border-radius: 20px;
-    padding: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    border-radius: 30px;
+    padding: .8em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin: 0.8em;
+    margin-left: .6em;
+    margin-right: .6em;
     background-color: rgba(255, 255, 255, 0.462);
+}
+
+#units {
+    border: 2px solid rgba(75, 95, 118, 0.181);
+    background-color: rgba(75, 95, 118, 0.089);
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    margin-right: 2em;
+    padding: .4em;
+    padding-left: .6em;
+    padding-right: .6em;
+    float: right;
+    cursor: pointer;
 }
 
 .card {
