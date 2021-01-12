@@ -1,4 +1,5 @@
 import React from 'react';
+import header from './components/header.js';
 
 // using open weather map
 var apikey = "a8c4082333a7853f46479418b8da3462";
@@ -102,13 +103,7 @@ function App() {
   return (
     <div className='App'>
 
-      <div className="info">
-        <p id="title"> atmosphere </p>
-        <div className="city">
-          <p id="location"> San Francisco </p>
-          <input type="text" id="search" placeholder="search another city..."/>
-        </div>
-      </div>
+      <header />
 
       <div className="data">
 

@@ -10,53 +10,6 @@ body {
     overflow: hidden;
 }
 
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0.5em;
-    padding-left: 1em;
-    padding-right: 1.5em;
-}
-
-#title {
-    font-weight: 800;
-    font-size: 4.5em;
-    letter-spacing: 6px;
-    margin-top: 0.15em;
-    margin-bottom: 0.1em;
-    margin-left: 0.6em;
-    text-align: left;
-    /* background-color: black; */
-    color: rgba(255, 255, 255, 0.893);
-}
-
-.city {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1.3em;
-    margin-top: 1.2em;
-    margin-right: 2em;
-    padding: 1em;
-    padding-left: 1.8em;
-    width: 11em;
-    height: 3em;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-#location {
-    margin: 0;
-    margin-left: 0.3em;
-}
-
-#search {
-    border: 0;
-    border-radius: 10px;
-    padding-left: 1em;
-    background-color: rgba(255, 255, 255, 0.791);
-}
-
 .data {
     display: flex;
     flex-wrap: wrap;
