@@ -1,16 +1,17 @@
 import React from 'react';
-import './header.css';
+import './Header.css';
+import Search from './Search.js';
 
-function header() {
+function Header() {
     return (
         <div className="info">
             <p id="title"> atmosphere </p>
             <div className="city">
             <p id="location"> San Francisco </p>
-            <input type="text" id="search" placeholder="search another city..."/>
+            <Search/>
             </div>
         </div>
     );
 }
 
-export default header;
+export default Header;
