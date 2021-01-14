@@ -1,0 +1,82 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgb(157, 186, 228), rgb(206, 229, 240));
+    font-family: 'Montserrat';
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-weight: 200;
+    overflow: scroll;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2.5em;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        bottom: -4em;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0em;
+    }
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+
+#title {
+    font-weight: 800;
+    font-size: 4.5em;
+    letter-spacing: 6px;
+    margin-top: 0.15em;
+    margin-bottom: 0.2em;
+    margin-left: 0.6em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.893);
+}
+
+.note {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.12em;
+    line-height: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    padding: 1.3em;
+    padding-left: 3.3em;
+    padding-right: 3.3em;
+    width: 85%;
+    border-radius: 40px;
+    text-align: center;
+    animation-name: fadein;
+    position: relative;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+#notebutton {
+    border: 2px solid rgba(75, 95, 118, 0.05);
+    background-color: rgba(75, 95, 118, 0.029);
+    color: rgba(75, 95, 118, 0.29);
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    margin-top: 0em;
+    margin-right: -6em;
+    padding: .4em;
+    padding-left: .6em;
+    padding-right: .6em;
+    float: right;
+    cursor: pointer;
+}

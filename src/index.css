@@ -45,24 +45,6 @@ body {
     background-color: rgba(255, 255, 255, 0.462);
 }
 
-.note {
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 2em;
-    padding-right: 4em;
-    padding-left: 4em;
-    width: 60em;
-    height: 26em;
-    border-radius: 40px;
-    text-align: left;
-}
-
-#header {
-    text-align: center;
-}
-
 #notebutton {
     border: 2px solid rgba(75, 95, 118, 0.05);
     background-color: rgba(75, 95, 118, 0.029);
