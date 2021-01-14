@@ -4,12 +4,13 @@ import Current from './components/Current.js';
 import Card from './components/Card.js';
 import Api from './components/Api.js';
 import AppContext from './components/AppContext.js';
+import Note from './note.js';
 
 function App() {
   const [city, setCity] = useState('San Francisco');
   const [units, setUnits] = useState('imperial');
   const changeCity = (e, city, units) => {
-    if(e.keyCode == 13) {
+    if(e.keyCode === 13) {
       setCity(e.target.value);
       Api(city, units);
       e.target.value = '';
@@ -48,6 +49,7 @@ function App() {
         </div>
 
       </div>
+      <button id="notebutton" onClick={Note}>creator's note</button>
 
     </div>
     </AppContext.Provider>
