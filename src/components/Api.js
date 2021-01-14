@@ -1,4 +1,3 @@
-import React from 'react';
 import Haiku from './Haiku.js';
 
 // using open weather map

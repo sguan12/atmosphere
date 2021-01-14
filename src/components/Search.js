@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {useContext} from 'react';
 import './Search.css';
 import Api from './Api.js';
 import AppContext from './AppContext.js';
@@ -7,7 +6,7 @@ import AppContext from './AppContext.js';
 class Search extends Component {
     
     keyPress(e) {
-        if(e.keyCode == 13) {
+        if(e.keyCode === 13) {
             Api(e.target.value, "imperial");
             e.target.value = '';
         }

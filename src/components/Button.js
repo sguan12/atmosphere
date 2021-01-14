@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {useContext} from 'react';
 import './Button.css';
-import Api from './Api.js';
 import AppContext from './AppContext.js';
 
 
