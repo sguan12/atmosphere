@@ -50,7 +50,16 @@ function update(data2) {
   document.getElementById('w4').innerHTML = w4;
   document.getElementById('temp4').innerHTML = t4;
   // style adjustments
-//   if (data2.current.dt > data2.current.sunset) night();
+  if (data2.current.dt > data2.current.sunset) night();
+  else day();
+}
+
+// changing background color based on time
+function day() {
+  document.body.style = "background-image: linear-gradient(rgb(157, 186, 228), rgb(206, 229, 240));";
+}
+function night() {
+  document.body.style = "background-image: linear-gradient(rgb(30, 47, 71), rgb(74, 95, 104));";
 }
 
 export default Api;

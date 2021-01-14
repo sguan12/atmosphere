@@ -1,18 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/Header.js';
 import Current from './components/Current.js';
 import Card from './components/Card.js';
 import Api from './components/Api.js';
-import {city, units} from './components/Global.js';
-
-// changing background color based on time
-function night() {
-  document.body.style = "background-image: linear-gradient(rgb(30, 47, 71), rgb(74, 95, 104));";
-}
+import AppContext from './components/AppContext.js';
 
 function App() {
+  const [city, setCity] = useState('San Francisco');
+  const [units, setUnits] = useState('imperial');
+  const changeCity = (e, city, units) => {
+    if(e.keyCode == 13) {
+      setCity(e.target.value);
+      Api(city, units);
+      e.target.value = '';
+    }
+  }
+  const changeUnits = (b, units, city) => {
+    if (b.bool) {
+      setUnits("metric");
+    }
+    else {
+      setUnits("imperial");
+    }
+    Api(city, units);
+  }
+  const settings = {
+    city, setCity, changeCity,
+    units, setUnits, changeUnits
+  } 
+
   Api(city, units);
   return (
+    <AppContext.Provider value={settings}>
     <div className='App'>
 
       <Header/>
@@ -31,6 +50,7 @@ function App() {
       </div>
 
     </div>
+    </AppContext.Provider>
   );
 }
 
